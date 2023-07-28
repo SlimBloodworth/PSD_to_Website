@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/*Resets*/
+*, body, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+:root {
+    --primary-light-blue: #61759e;
+    --primary-dark-blue: #404f6c;
+    --primary-white: #f4f6f9;
+    --accent-dark: #182443;
+    --accent-num: #506285;
+    --accent-transition: #495979;
+    --accent-gray: #b0b4be;
+    --font-family-headers: 'Bebas Neue', cursive;
+}
+
+.f-f-heading {
+    font-family: var(--font-family-headers);
+    letter-spacing: 0.1rem;
+}
+
+.num-color {
+    color: var(--accent-num);
+}
+
+.section-text {
+    color: var(--primary-dark-blue);
+}
