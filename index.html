@@ -6,61 +6,56 @@
     <meta name="author" content="Michelle Renee Bloodworth">
     <title>CT_SkillTest_v3</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
-    <!-- HERO -->
-    <div class="wrapper">
-        <header class="hero">
-            <!-- NAV -->
-            <a href="#"><img src="assets/img/header-logo-2.png" alt="Logo"></a>
-                <nav class="primary_nav">
-                    <ul class="nav_container">
-                        <li>Home</li>
-                        <li>Team</li>
-                    </ul>
-                </nav>
-            <!-- <div class="nav_container">
-                <a href="#"><img src="assets/img/header-logo-2.png" alt="Logo"></a>
-                <ul class="nav_container">
-                    <li>Home</li>
-                    <li>Team</li>
+   <header class="hero">
+    <div class="hero__icon"></div>
+    <nav class="primary-nav">
+        <ul class="primary-nav__container">
+            <li class="primary-nav__item"></li>
+            <li class="primary-nav__item"></li>
+        </ul>
+    </nav>
+   </header>
+   <div class="divider divider-top"></div>
+   <main>
+    <section class="history-section">
+        <div class="carousel">
+            <!-- previous arrow -->
+            <button class="carousel__button carousel__arrow--previous hide"></button>
+            <!-- main carousel container -->
+            <div class="carousel__track-container">
+                <ul class="carousel__track">
+                    <li class="carousel__slide"></li>
+                    <li class="carousel__slide"></li>
                 </ul>
-            </div> -->
-            <img src="assets/img/hero-bkgrnd.png" alt="background" class="hero_background background">
-            <img src="assets/img/hero-texture-layer.png" alt="foreground Texture" class="hero_background foreground-texture">
-            <img src="assets/img/hero-title-img.png" alt="Los Angeles Mountains" class="hero_title_img_text">
-            <img src="assets/img/hero-shadow-layer.png" alt="foreground Shadow"class="hero_background foreground-shadow">
-        </header>
-    </div>
-    <main class="main_body">
-        <!-- HISTORY SECTION-->
-        <section>
-            <div class="center_nav_container">
-                <img src="assets/img/footer-logo-title.png" alt="L.A. Mountains Logo">
             </div>
-            <div><p><span class="section_num">01.</span></p></div>
-            <div><p><span class="section_title">History</span></p></div>
-            <div class="descriptive_text">
-                <p>THE ANGELES NATIONAL FOREST - The first national forest in the State of California and second in the United States, Angeles National Forest was created by proclamation of President Benjamin Harrison on December 20, 1892. The first name
-                    given to the forest, "San Gabriel Timberland Reserve," was changed to "San Gabriel National Forest" March 4, 1907 and then to "Angeles National Forest" on July 1, 1908.</p>
+            <!-- next arrow -->
+            <button class="carousel__button carousel__arrow--next"></button>
+            <!-- indicator dots nav -->
+            <div class="carousel__nav">
+                <button class="carousel__nav--indicator current-slide"></button>
+                <button class="carousel__nav--indicator"></button>
+                <button class="carousel__nav--indicator"></button>
+              </div>
+        </div>
+    </section>
+    <section class="climb-section">
+        <div class="climb__container">
+            <div class="climb__container--text"></div>
+        </div>
+    </section>
+    <section class="mountain-section">
+        <div class="mountain">
+            <div class="mountain-btn__container">
+                <button class="mountain-btn mountain-btn--one"></button><button class="mountain-btn mountain-btn--two"></button>
             </div>
-            <img src="assets/img/middle-section-bkgrnd-img.png" alt="background">
-                <!-- IMG CAROUSEL -->
-                <div class="carousel_container">
-                    <div class="carousel"></div>
-                </div>
-            
-        </section>
-        <!-- CLIMB SECTION -->
-        <section>
-            <div class="climb_text_container"></div>
-            <div class="mountain_select_container"></div>
-            <div class="schedule_container"></div>
-        </section>
-    </main>
-    <footer>
-        <div class="footer_logo"></div>
-    </footer>
-   <script src="main.js" defer></script> 
+        </div>
+        <div class="mountain-section__schedule"></div>
+    </section>
+   </main>
+   <footer class="divider divider-footer"></footer>
+    
 </body>
 </html>

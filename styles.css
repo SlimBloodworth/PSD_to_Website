@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-/*Resets*/
-*, body, ::before, ::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 100%;
-}
-
 :root {
     --primary-light-blue: #61759e;
     --primary-dark-blue: #404f6c;
@@ -19,62 +11,11 @@
     --font-family-headers: 'Bebas Neue', cursive;
 }
 
-.f-f-heading {
+/*Resets*/
+*, body, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
     font-family: var(--font-family-headers);
-    letter-spacing: 0.1rem;
 }
-
-.num-color {
-    color: var(--accent-num);
-}
-
-.section-text {
-    color: var(--primary-dark-blue);
-}
-
-/*-------*/
-.wrapper {
-    height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    perspective: 10px;/*using perspective for 3D parallax effect. z axis for distance from screen. All other values are relative to this perspective value.*/
-}
-
-.hero {
-position: relative;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100%;
-transform-style: preserve-3d;/*Allow 3D animations to work properly*/
-z-index: -1;/*Keeps these elements behind the sections that follow them*/
-}
-
-.background, .foreground-texture {
-    transform: translateZ(-10px) scale(2);/*sets the image twice as far away based on the perspective from the .wrapper. scale(2) scales the image back up to the size it was before translateZ(). This allows it to scroll at a different speed.*/
-}
-
-.foreground-shadow {
-transform: translateZ(-5px) scale(1.5);/*increases the size by 50% because it is 50% of our perspective away from the screen.*/
-}
-
-.hero_background {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;/*Gives correct aspect ratio*/
-    z-index: -1;
-}
-
-.hero_title_img_text {
-    position: absolute;
-    margin: 0 auto;
-}
-
-/* .nav_container{
-   background: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-} */
