@@ -19,8 +19,13 @@
     
 }
 
-h2 {
+h2, h3 {
     font-family: var(--font-family-headers);
+}
+/*Utility*/
+
+.divider {
+    background-color: var(--primary-light-blue);
 }
 
 /* HERO SECTION */
@@ -68,7 +73,7 @@ h2 {
 
 /* ^^ END HERO SECTION ^^ */
 .divider--first {
-    background-color: var(--primary-light-blue);
+    /* background-color: var(--primary-light-blue); */
     height: 60px;
 }
 
@@ -84,8 +89,33 @@ h2 {
     background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
-    height: 400px;
+    height: 800px;
 }
 
+/*Image Carousel*/
+.carousel__background {
+    background-image: url(assets/img/carousel-bkgrnd.png);
+    background-size: cover;    
+    background-repeat: no-repeat;
+    width: 100%;  
+}
 
 /* ^^ END HISTORY SECTION */
+
+/* CLIMB SECTION */
+
+/* ^^ END CLIMB SECTION */
+
+/*MOUNTAIN SECTION*/
+.mountain-btn__container {
+    background-color: #404f6c;
+}
+
+/* ^^ END MOUNTAIN SECTION*/
+
+/* FOOTER */
+
+.divider-footer {
+    background-color: #404f6c;
+    height: 60px;
+}
