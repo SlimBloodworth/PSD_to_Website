@@ -30,6 +30,10 @@ h2, h3 {
     font-family: var(--font-family-headers);
 }
 
+p {
+    font-size: 1rem;
+}
+
 a {
     text-decoration: none;
     font-family: var(--font-family-headers);
@@ -54,6 +58,10 @@ li {
     background-color: #404f6c;
 }
 
+.section-number {
+    color: var(--accent-num);
+}
+
 /* HERO SECTION */
 /* Navigation */
 .primary-nav {
@@ -70,8 +78,7 @@ li {
 /* Hero Background */
 .hero__background {
     background-image: url(assets/img/hero-texture-layer.png), url(assets/img/hero-bkgrnd.jpg);
-    background-size: cover;    
-    /* background-size: contain; */
+    background-size: cover; 
     background-repeat: no-repeat;
     background-position: center top;
     background-attachment: fixed;
@@ -79,16 +86,22 @@ li {
     /* height: 100%; */
 }
 
-.hero__background--title-img {
-    max-width: 100%;
-    height: auto;
+.hero__title__img{
+    background-image: url(assets/img/hero-title-img.png);
+    /* background-size: fill; */
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: fixed; */
+    position: relative;
+    height: 205px;    
 }
 
 .hero__shadow-layer {
     background-image: url(assets/img/hero-shadow-layer.png);
     background-size: cover;    
     background-repeat: no-repeat;    
-    height: 15.62em; 
+    height: 10em; 
 }
 
 /* ^^ End Hero Background*/
