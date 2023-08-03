@@ -12,10 +12,27 @@
 }
 
 /*Resets*/
-*, body, ::before, ::after {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+
+body {
     font-size: 100%;
     font-family: var(--font-family-headers);
 }
+
+
+/* HERO SECTION */
+/* Navigation */
+/*  -----------------  */
+/* ^^ End Navigation */
+
+/* Hero Background */
+
+/* ^^ End Hero Background*/
+
+/* ^^ END HERO SECTION ^^ */
+
