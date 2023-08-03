@@ -13,7 +13,7 @@
         <div class="hero__background">
         <div class="hero__icon"><img src="assets/img/header-logo-2.png" alt="Company Logo Icon" class="icon"></div>
         <nav class="primary-nav">
-            <ul class="primary-nav__container">
+            <ul class="primary-nav__container flex">
                 <li class="primary-nav__item">.01 <span class="primary-nav__item--text">Home</span></li>
                 <li class="primary-nav__item">.02 <span class="primary-nav__item--text">Team</span></li>
             </ul>        
@@ -26,7 +26,7 @@
     </div>
     </header>
     <!-- Divider 1 -->
-    <div class="divider divider--first">
+    <div class="divider-light divider--first">
         <div class="divider__logo">
             <img src="assets/img/logo1.png" alt="Los Angeles Mountains" class="logo">
         </div>        
@@ -76,32 +76,40 @@
     <!-- Climb Section -->
     <section class="climb-section">
         <!-- Divider 2-->
-    <div class="climb__container divider">
-        <div class="climb__container--text">
+    <div class="climb__container divider-light">
+        <div class="climb__container--title">
             <div class="history-section__title--number">
                 <p class="section-number">02</p>
                 <h2 class="section__title">Climb</h2>
                 <p class="section-number">.</p>
             </div>
         </div>
+        <div class="climb-section__text">
+            <p>LA is not usually thought of as a mountain hiking city, but some of the best LA hikes are in the high mountains, all within an hour or so of downtown. In fact, some of these peaks are only a few thousand feet lower than Mt Whitney. Check out these great LA mountain hikes.</p>
+        </div>
     </div>
         
     </section>
     <section class="mountain-section">
-        <div class="mountain">
-            <div class="mountain-btn__container">
-                <button class="mountain-btn"><a href="" class="mountain-btn--one">Mountain 1</a></button><button class="mountain-btn"><a href="" class="mountain-btn--two">Mountain 2</a></button>
-            </div>
+        <div class="mountain-btn__container divider-dark flex">
+            <button class="mountain-btn"><a href="" class="mountain-btn mountain-btn--one">Mountain 1</a></button>
+            <button class="mountain-btn"><a href="" class="mountain-btn mountain-btn--two">Mountain 2</a></button>
         </div>
+        
         <div class="mountain-section__background">
-            <div class="mountain-section__schedule">
+            <div class="mountain-section__schedule--container">
                 <h3>Schedule</h3>
+                <p>25 Nov 2016 Vistibulum viverra</p>
+                <p>28 Nov 2016 Vistibulum viverra</p>
+                <p>18 Dec 2016 Vistibulum viverra</p>
+                <p> 7 Jan 2017 Vistibulum viverra</p>
             </div>
         </div>
     </section>
    </main>
-   <footer class="divider-footer">
+   <footer class="divider-footer divider-dark">
     <div class="divider__logo"><img src="assets/img/divider-logo-1.png" alt="Los Angeles Mountains" class="logo"></div>
+    <p class="copyright">Copyright 2016. All rights reserved</p>
    </footer>
     
 </body>
