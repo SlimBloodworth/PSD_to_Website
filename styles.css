@@ -19,20 +19,52 @@
     
 }
 
-body {
-    font-size: 100%;
-    font-family: var(--font-family-headers);
-}
-
 
 /* HERO SECTION */
 /* Navigation */
-/*  -----------------  */
+.primary-nav {
+    font-family: var(--font-family-headers);
+    color: var(--primary-white);
+}
+
+.primary-nav__container {
+    display: flex;
+}
+
+.primary-nav__item {
+    margin-left: 15px;
+}
+
+
+.primary-nav__item--text {
+    font-style: italic;    
+}
 /* ^^ End Navigation */
 
+
 /* Hero Background */
+.hero__background {
+    background-image: url(assets/img/hero-texture-layer.png), url(assets/img/hero-bkgrnd.jpg);
+    background-size: cover;    
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    width: 100%;
+    /* height: 100%; */
+}
+
+.hero__shadow-layer {
+    background-image: url(assets/img/hero-shadow-layer.png);
+    background-size: cover;    
+    background-repeat: no-repeat;    
+    height: 15.62em; 
+}
 
 /* ^^ End Hero Background*/
 
 /* ^^ END HERO SECTION ^^ */
-
+.divider--first {
+    background-color: var(--primary-light-blue);
+}
+/*  */
