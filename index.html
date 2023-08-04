@@ -12,20 +12,13 @@
     <header class="hero">
         <div class="hero__background">
         <div class="hero__icon"><img src="assets/img/header-logo-2.png" alt="Company Logo Icon" class="icon"></div>
-        <nav class="primary-nav">
+        <nav class="primary-nav flex">
             <ul class="primary-nav__container flex">
                 <li class="primary-nav__item">.01 <span class="primary-nav__item--text">Home</span></li>
                 <li class="primary-nav__item">.02 <span class="primary-nav__item--text">Team</span></li>
             </ul>        
         </nav>
-        <div class="hero__title__img"></div>
-        <!-- <div class="hero__title-container">
-            <div class="hero__title__img"></div>
-        </div>        -->
-        <!-- <img src="assets/img/hero-title-img.png" alt="Los Angeles Mountains" class="hero__background--title-img">
-        <img src="assets/img/hero-shadow-layer.png" alt="" class="hero__background--shadow-img">  -->
-        
-        <!--  <img src="assets/img/hero-title-img.png" alt="Los Angeles Mountains" class="hero__background--title-img">  -->
+        <div class="hero__title__img"></div>       
         <div class="hero__shadow-layer"></div>
     </div>
     </header>
@@ -54,26 +47,30 @@
             </div>
         </div>
         <!--Carousel-->
-        <div class="carousel carousel__background">
-        <div class="carousel__container">
-            <!-- previous arrow -->
-            <button class="carousel__button carousel__arrow--previous hide"></button>
-            <!-- main carousel container -->
-            <div class="carousel__track-container">
-                <ul class="carousel__track">
-                    <li class="carousel__slide"></li>
-                    <li class="carousel__slide"></li>
-                </ul>
-            </div>
-            <!-- next arrow -->
-            <button class="carousel__button carousel__arrow--next"></button>
-            <!-- indicator dots nav -->
-            <div class="carousel__nav">
-                <button class="carousel__nav--indicator current-slide"></button>
-                <button class="carousel__nav--indicator"></button>
-                <button class="carousel__nav--indicator"></button>
+        <div class="carousel__background">
+            <div class="carousel">
+                <!-- previous button -->
+                <button class="carousel__button carousel__button--previous hide"><svg viewBox="0 0 256 512" width="15" title="angle-left">
+                <path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z" />
+              </svg></button>
+                <!-- main carousel container -->
+                <div class="carousel__track-container">
+                  <ul class="carousel__track">
+                    <li class="carousel__slide current-slide"><img src="assets/img/carousel-img-1.jpg" alt="image 1" class="carousel__img"></li>
+                    <li class="carousel__slide"><img src="assets/img/carousel-img-2.jpg" alt="image 2" class="carousel__img"></li>
+                    
+                  </ul>
+                </div>
+                <!-- next button -->
+                <button class="carousel__button carousel__button--next"><svg viewBox="0 0 256 512" width="15" title="angle-right">
+                <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+              </svg></button>
+                <!-- elipses nav -->
+                <div class="carousel__nav">
+                  <button class="carousel__nav--indicator current-slide"></button>
+                  <button class="carousel__nav--indicator"></button>                  
+                </div>
               </div>
-        </div>
     </div>
     </section>
     
@@ -96,23 +93,27 @@
     </section>
     <section class="mountain-section">
         <div class="mountain-btn__container divider-dark flex">
-            <button class="mountain-btn"><a href="" class="mountain-btn mountain-btn--one">Mountain 1</a></button>
-            <button class="mountain-btn"><a href="" class="mountain-btn mountain-btn--two">Mountain 2</a></button>
+            <div class="mtn-btns">
+                <button class="mountain-btn"><a href="" class="mountain-btn mountain-btn--one">Mountain 1</a></button>
+                <button class="mountain-btn"><a href="" class="mountain-btn mountain-btn--two">Mountain 2</a></button>
+            </div>
         </div>
         
         <div class="mountain-section__background">
-            <div class="mountain-section__schedule--container">
-                <h3>Schedule</h3>
-                <p>25 Nov 2016 Vistibulum viverra</p>
-                <p>28 Nov 2016 Vistibulum viverra</p>
-                <p>18 Dec 2016 Vistibulum viverra</p>
-                <p> 7 Jan 2017 Vistibulum viverra</p>
-            </div>
+            <picture class="mountain-section__images">
+                <div class="mountain-section__schedule-container">
+                    <h3>Schedule</h3>
+                    <p>25 Nov 2016 Vistibulum viverra</p>
+                    <p>28 Nov 2016 Vistibulum viverra</p>
+                    <p>18 Dec 2016 Vistibulum viverra</p>
+                    <p> 7 Jan 2017 Vistibulum viverra</p>
+                </div>
+            </picture>            
         </div>
     </section>
    </main>
    <footer class="divider-footer divider-dark">
-    <div class="divider__logo"><img src="assets/img/divider-logo-1.png" alt="Los Angeles Mountains" class="logo"></div>
+    <div class="divider__logo--footer"><img src="assets/img/divider-logo-1.png" alt="Los Angeles Mountains" class="logo"></div>
     <p class="copyright">Copyright 2016. All rights reserved</p>
    </footer>
     

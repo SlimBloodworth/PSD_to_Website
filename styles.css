@@ -63,10 +63,16 @@ li {
 }
 
 /* HERO SECTION */
+
+.hero__icon {
+    margin-left: 200px;
+}
+
 /* Navigation */
 .primary-nav {
     font-family: var(--font-family-headers);
     color: var(--primary-white);
+    
 }
 
 .primary-nav__item--text {
@@ -77,7 +83,9 @@ li {
 
 /* Hero Background */
 .hero__background {
+    content: "";
     background-image: url(assets/img/hero-texture-layer.png), url(assets/img/hero-bkgrnd.jpg);
+    position: relative;
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center top;
@@ -87,21 +95,24 @@ li {
 }
 
 .hero__title__img{
-    background-image: url(assets/img/hero-title-img.png);
-    /* background-size: fill; */
-    
-    background-repeat: no-repeat;
-    background-position: center;
-    /* background-attachment: fixed; */
+    content: "";
     position: relative;
-    height: 205px;    
+    background-image: url(assets/img/hero-title-img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+    /* background-attachment: fixed; */
+    transform: translateX(-75px);
+    margin-top: 13%;
+    /* height: 200px; */
+    height: 10rem;
 }
 
 .hero__shadow-layer {
     background-image: url(assets/img/hero-shadow-layer.png);
     background-size: cover;    
     background-repeat: no-repeat;    
-    height: 10em; 
+    height: 10rem; 
 }
 
 /* ^^ End Hero Background*/
@@ -114,6 +125,10 @@ li {
 
 .logo {
     margin: 0.5rem 0;
+}
+
+.divider__logo {
+    margin-left: 250px;
 }
 
 /* HISTORY SECTION */
@@ -132,8 +147,87 @@ li {
     background-image: url(assets/img/carousel-bkgrnd.png);
     background-size: cover;    
     background-repeat: no-repeat;
-    width: 100%;  
+    width: 100%;
+    height: 200px;  
 }
+
+.carousel {
+    position: relative;
+    height: 200px;
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .carousel__img {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+  }
+
+  .carousel__track-container {    
+    padding: 10px; 
+    height: 100%;    
+    position: relative;
+    overflow: hidden;
+  }
+
+  .carousel__track {    
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+  }
+
+  .carousel__slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .carousel__button {
+    position: absolute;
+    top: 50%;
+    background: transparent;
+    border: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .carousel__button--previous {
+    left: -45px;
+  }
+
+  .carousel__button--next {
+    right: -45px;
+  }
+
+  .carousel__nav {   
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+  }
+
+  .carousel__nav--indicator {
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 0 15px;
+    cursor: pointer;
+  }
+
+  .carousel__nav--indicator.current-slide {
+    background-color: rgba(0, 0, 0.75);
+  }
+
+  .hide {
+    display: none;
+  }
+
+
 
 /* ^^ END HISTORY SECTION */
 
@@ -142,10 +236,15 @@ li {
 /* ^^ END CLIMB SECTION */
 
 /*MOUNTAIN SECTION*/
+
+.mtn-btns{
+    margin-left: 200px;
+}
+
 .mountain-btn {
     border: none;
     background-color: transparent;
-    color: var(--accent-gray);
+    color: var(--accent-gray);    
     cursor: pointer;
 }
 
@@ -167,4 +266,8 @@ li {
 .divider-footer {
     display: flex;    
     height: 60px;
+}
+
+.divider__logo--footer {
+    margin-left: 200px;
 }
