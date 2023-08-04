@@ -9,35 +9,39 @@
     <script src="main.js" defer></script>
 </head>
 <body>
-    <header class="hero">
-        <div class="hero__background">
-        <div class="hero__icon"><img src="assets/img/header-logo-2.png" alt="Company Logo Icon" class="icon"></div>
-        <nav class="primary-nav flex">
-            <ul class="primary-nav__container flex">
-                <li class="primary-nav__item">.01 <span class="primary-nav__item--text">Home</span></li>
-                <li class="primary-nav__item">.02 <span class="primary-nav__item--text">Team</span></li>
-            </ul>        
-        </nav>
-        <div class="hero__title__img"></div>       
+    <header class="hero hero__background">        
+        <div>
+            <div class="hero__nav">
+                <div class="hero__icon">
+                    <img src="assets/img/header-logo-2.png" alt="Company Logo Icon" class="icon">
+                </div>
+                <nav class="primary-nav flex">
+                    <ul class="primary-nav__container flex">
+                        <li class="primary-nav__item">.01 <span class="primary-nav__item--text"><a href="#main-content">Home</a></span></li>
+                        <li class="primary-nav__item">.02 <span class="primary-nav__item--text"><a href="#climb-content">Team</a></span></li>
+                    </ul>        
+                </nav>
+            </div>
+        <div class="hero__title__img"><h1 class="sr-only">Los Angeles Mountains</h1></div>       
         <div class="hero__shadow-layer"></div>
-    </div>
-    </header>
-    <!-- Divider 1 -->
-    <div class="divider-light divider--first">
-        <div class="divider__logo">
-            <img src="assets/img/logo1.png" alt="Los Angeles Mountains" class="logo">
-        </div>        
-    </div>
-   <main>
+        <!-- Divider 1 -->
+            <div class="divider-light divider--first">
+                <div class="divider__logo">
+                    <img src="assets/img/logo1.png" alt="Los Angeles Mountains" class="logo">
+                </div>        
+            </div>
+        </div>    
+    </header>   
+   <main id="main-content">
     <!-- History Section -->    
     <section class="history-section">
         <div class="history-section__background">
-            <div class="history-section__text-container">
+            <div class="section__text-container">
                 <div class="history-section__title-container">
-                    <div class="history-section__title--number">
+                    <div class="section__title--number">
                         <p class="section-number">01</p>
                         <h2 class="section__title">History</h2>
-                        <p class="section-number">.</p>
+                        <p class="section-number num-dot">.</p>
                     </div>
                 </div>
                 <div class="history-section__text">
@@ -47,7 +51,7 @@
             </div>
         </div>
         <!--Carousel-->
-        <div class="carousel__background">
+        <div class="carousel__background" id="climb-content">
             <div class="carousel">
                 <!-- previous button -->
                 <button class="carousel__button carousel__button--previous hide"><svg viewBox="0 0 256 512" width="15" title="angle-left">
@@ -78,11 +82,11 @@
     <section class="climb-section">
         <!-- Divider 2-->
     <div class="climb__container divider-light">
-        <div class="climb__container--title">
-            <div class="history-section__title--number">
+        <div class="section__text-container">
+            <div class="section__title--number">
                 <p class="section-number">02</p>
-                <h2 class="section__title">Climb</h2>
-                <p class="section-number">.</p>
+                        <h2 class="section__title">Climb</h2>
+                        <p class="section-number num-dot__two">.</p>                
             </div>
         </div>
         <div class="climb-section__text">
@@ -100,15 +104,17 @@
         </div>
         
         <div class="mountain-section__background">
+            <div class="mountain-section__schedule-container">
+                <h3>Schedule</h3>
+                <p>25 Nov 2016 Vistibulum viverra</p>
+                <p>28 Nov 2016 Vistibulum viverra</p>
+                <p>18 Dec 2016 Vistibulum viverra</p>
+                <p> 7 Jan 2017 Vistibulum viverra</p>
+            </div>            
             <picture class="mountain-section__images">
-                <div class="mountain-section__schedule-container">
-                    <h3>Schedule</h3>
-                    <p>25 Nov 2016 Vistibulum viverra</p>
-                    <p>28 Nov 2016 Vistibulum viverra</p>
-                    <p>18 Dec 2016 Vistibulum viverra</p>
-                    <p> 7 Jan 2017 Vistibulum viverra</p>
-                </div>
-            </picture>            
+                <img src="assets/img/mountian-img-1.jpg" alt="mountain 1" class="mtnOne">
+                <img src="assets/img/mountian-img-2.jpg" alt="mountain 2" class="mtnTwo hidden">                             
+            </picture>                       
         </div>
     </section>
    </main>

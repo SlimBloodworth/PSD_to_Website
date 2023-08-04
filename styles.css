@@ -28,15 +28,19 @@ body {
 
 h2, h3 {
     font-family: var(--font-family-headers);
+    font-size: 1.5rem;
+    color: var(--primary-dark-blue);
 }
 
 p {
     font-size: 1rem;
+    color: var(--primary-dark-blue);
 }
 
 a {
     text-decoration: none;
     font-family: var(--font-family-headers);
+    color: var(--primary-white);
 }
 
 li {
@@ -60,19 +64,56 @@ li {
 
 .section-number {
     color: var(--accent-num);
+    font-size: 3rem;
 }
+
+.section__title--number {
+    display: flex;
+    flex-direction: row;
+}
+
+.section__text-container {
+    margin-left: 15rem;
+    padding-top: 3rem;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+}
+
+
 
 /* HERO SECTION */
 
+.hero__nav {
+    position: sticky;
+    top: 0;
+    background-color: transparent;
+    
+}
+
 .hero__icon {
     margin-left: 200px;
+    padding-top: 20px;    
 }
 
 /* Navigation */
 .primary-nav {
     font-family: var(--font-family-headers);
     color: var(--primary-white);
+    justify-content: flex-end;    
+    margin-right: 200px;
     
+}
+
+.primary-nav__container{
+    width: 200px;
+    transform: translateY(-30px);
 }
 
 .primary-nav__item--text {
@@ -84,8 +125,8 @@ li {
 /* Hero Background */
 .hero__background {
     content: "";
-    background-image: url(assets/img/hero-texture-layer.png), url(assets/img/hero-bkgrnd.jpg);
-    position: relative;
+    background-image: url(assets/img/hero-texture-layer.png), url(assets/img/hero-bkgrnd.jpg);   
+    /* position: absolute; */
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center top;
@@ -104,22 +145,20 @@ li {
     /* background-attachment: fixed; */
     transform: translateX(-75px);
     margin-top: 13%;
-    /* height: 200px; */
     height: 10rem;
 }
 
 .hero__shadow-layer {
     background-image: url(assets/img/hero-shadow-layer.png);
     background-size: cover;    
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;        
     height: 10rem; 
 }
 
 /* ^^ End Hero Background*/
 
 /* ^^ END HERO SECTION ^^ */
-.divider--first {
-    /* background-color: var(--primary-light-blue); */
+.divider--first {    
     height: 60px;
 }
 
@@ -134,12 +173,23 @@ li {
 /* HISTORY SECTION */
 
 .history-section__background {
+    position: relative;
     background-image: url(assets/img/middle-section-bkgrnd-img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
     height: 800px;
+}
+
+.history-section__text {
+    width: 45rem;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.num-dot {
+    margin-left: -3.5rem;
 }
 
 /*Image Carousel*/
@@ -165,7 +215,8 @@ li {
   }
 
   .carousel__track-container {    
-    padding: 10px; 
+    padding: 10px;
+    width: 100%; 
     height: 100%;    
     position: relative;
     overflow: hidden;
@@ -232,7 +283,15 @@ li {
 /* ^^ END HISTORY SECTION */
 
 /* CLIMB SECTION */
+.climb-section__text {
+    width: 45rem;
+    margin: 0 auto;
+    line-height: 1.5;
+}
 
+.num-dot__two {
+    margin-left: -2.5rem;
+}
 /* ^^ END CLIMB SECTION */
 
 /*MOUNTAIN SECTION*/
@@ -254,10 +313,39 @@ li {
     scale: 1.5;
 }
 
-.mountain-section__schedule--container {
-    width: 12rem;
-    background-color: #F4F6F9;
+.mountain-section__background {
+    position: relative;
+  }
+
+  picture {
+    max-width: 100%;
+    display: block;
 }
+
+  .mountain-section__schedule-container {
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+    position: absolute;
+    background-color: var(--primary-white);
+    width: 355px;
+    height: 230px;
+    align-items: center;
+    justify-content: center;
+    top: 5rem;
+    left: 12rem;
+    z-index: 1;
+  }
+  
+  .mountain-section__images {
+    position: relative;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  
 
 /* ^^ END MOUNTAIN SECTION*/
 

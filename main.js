@@ -86,3 +86,29 @@ indicatorNav.addEventListener('click', e => {
   hideShowArrows(slides, prevBtn, nextBtn, targetIndex);
       
 });
+
+/*MOUNTAIN IMAGES*/
+
+const mountain1Btn = document.querySelector('.mountain-btn--one');
+
+const mountain2Btn = document.querySelector('.mountain-btn--two');
+
+const mtnOneImage = document.querySelector('.mtnOne');
+
+const mtnTwoImage = document.querySelector('.mtnTwo');
+
+mountain1Btn.addEventListener('click', e => {
+  e.preventDefault(); // Prevent default behavior of the link
+
+  // Show Mountain 1 image and hide Mountain 2 image
+  mtnOneImage.classList.remove('hidden');
+  mtnTwoImage.classList.add('hidden');
+});
+
+mountain2Btn.addEventListener('click', e => {
+  e.preventDefault();
+
+  // Show Mountain 2 image and hide Mountain 1 image
+  mtnTwoImage.classList.remove('hidden');
+  mtnOneImage.classList.add('hidden');
+});
