@@ -28,8 +28,7 @@ This project is converting a PhotoShop Document (PSD) into an HTML landing page 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Live Site](https://slimbloodworth.github.io/PSD_to_Website/)
 
 ## My process
 
