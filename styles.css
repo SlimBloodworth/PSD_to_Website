@@ -195,6 +195,7 @@ li {
 /*Image Carousel*/
 .carousel__background {
     background-image: url(assets/img/carousel-bkgrnd.png);
+    position:relative;
     background-size: cover;    
     background-repeat: no-repeat;
     width: 100%;
@@ -204,15 +205,15 @@ li {
 .carousel {
     position: relative;
     height: 200px;
-    /* width: 40%; */
-    width: 200px;
+    width: 40%;
+    max-width: 250px;
     margin: 0 auto;
   }
 
   .carousel__img {
     width: 100%;
     height:100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 
   .carousel__track-container {    
