@@ -72,6 +72,8 @@ const proudOfThisFunc = () => {
 
 ### Continued development
 
+A work in progress, I am adding features as I go, and as I encounter needed adjustments.
+I am currently working out some responsive aspects.
 
 ### Useful resources
 
