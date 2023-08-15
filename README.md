@@ -43,7 +43,7 @@ This project is converting a PhotoShop Document (PSD) into an HTML landing page 
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
+- Vanilla JavaScript
 - GIMP PhotoShop
 - Mobile-first workflow
 
