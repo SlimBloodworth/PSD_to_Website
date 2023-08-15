@@ -19,6 +19,9 @@ This project is converting a PhotoShop Document (PSD) into an HTML landing page 
 ### The challenge
 
 - Take the given PhotoShop Document, separate the image assets, and use them to build a single page web application.
+- Must include an image carousel
+- Must include an accordion menu
+- Must be responsive for all screen sizes.
 
 ### Screenshot
 
@@ -34,10 +37,12 @@ This project is converting a PhotoShop Document (PSD) into an HTML landing page 
 
 - I began by pulling the needed assets using GIMP PhotoShop.
 - I saved any images that were more photo related as .jpg for the purposes of optimization and visual appeal.
+- I saved overlays and other images as .png for better use.
 - I researched and pulled text from Wikipedia to replace the lorem text.
 - I researched fonts to find one that most closely matched the design.
 - I used a color picker tool to set the variable colors needed according to the design.
 - I built the basic structure for the layout in HTML for the hero, as well as the sections, main content, and footer.
+- I really liked the hero for this project and wanted to add some parallax to it.
 
 ### Built with
 
@@ -49,9 +54,7 @@ This project is converting a PhotoShop Document (PSD) into an HTML landing page 
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+How to add code snippets:
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
@@ -67,18 +70,12 @@ const proudOfThisFunc = () => {
 }
 ```
 
-
 ### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
 
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
+- [GIMP Photo Editor](https://www.gimp.org/) - I love open source and I really like using GIMP for photo shopping.
 
 ## Author
 
@@ -91,4 +88,4 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. 
+- Thanks to Coalition Technologies for a fantastic, fun, and educational project!
