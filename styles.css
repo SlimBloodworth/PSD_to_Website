@@ -126,7 +126,7 @@ li {
 .hero__background {
     content: "";
     background-image: url(assets/img/hero-texture-layer.png), url(assets/img/hero-bkgrnd.jpg);   
-    /* position: absolute; */
+    position: relative;
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center top;
@@ -135,18 +135,27 @@ li {
     /* height: 100%; */
 }
 
-.hero__title__img{
+.hero__title__img--container{
     content: "";
     position: relative;
     background-image: url(assets/img/hero-title-img.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center top;
-    /* background-attachment: fixed; */
+    background-position: center top;       
     transform: translateX(-75px);
-    margin-top: 13%;
+    /* margin-top: 13%; */
     height: 10rem;
 }
+/* .hero__title__img--container {    
+    position: relative;
+    margin-left: 2rem;
+    width: 50%; 
+}
+
+.hero__title__img--image {
+    position: fixed;
+    width: 50%;
+} */
 
 .hero__shadow-layer {
     background-image: url(assets/img/hero-shadow-layer.png);
@@ -167,7 +176,7 @@ li {
 }
 
 .divider__logo {
-    margin-left: 250px;
+    margin-left: 25%;
 }
 
 /* HISTORY SECTION */
