@@ -24,6 +24,7 @@ body {
     align-items: center;
     line-height: 1.3;
     min-height: 100vh;
+    background-color: var(--primary-light-blue);
 }
 
 h2, h3 {
@@ -143,19 +144,14 @@ li {
     background-repeat: no-repeat;
     background-position: center top;       
     transform: translateX(-75px);
-    /* margin-top: 13%; */
+    margin: 0 auto;   
+    width: 75%;
     height: 10rem;
-}
-/* .hero__title__img--container {    
-    position: relative;
-    margin-left: 2rem;
-    width: 50%; 
 }
 
 .hero__title__img--image {
-    position: fixed;
-    width: 50%;
-} */
+    width: 100%;
+}
 
 .hero__shadow-layer {
     background-image: url(assets/img/hero-shadow-layer.png);
@@ -182,14 +178,25 @@ li {
 /* HISTORY SECTION */
 
 .history-section__background {
+    content: "";
     position: relative;
     background-image: url(assets/img/middle-section-bkgrnd-img.jpg);
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     width: 100%;
-    height: 800px;
+    /* width: 100vw; */
+    height: 800px;    
 }
+/*.hero__background {
+    content: "";
+    background-image: url(assets/img/hero-texture-layer.png), url(assets/img/hero-bkgrnd.jpg);   
+    position: relative;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    width: 100%;*/
 
 .history-section__text {
     width: 45rem;
@@ -204,7 +211,7 @@ li {
 /*Image Carousel*/
 .carousel__background {
     background-image: url(assets/img/carousel-bkgrnd.png);
-    position:relative;
+    position: relative;
     background-size: cover;    
     background-repeat: no-repeat;
     width: 100%;
@@ -326,6 +333,7 @@ li {
 
 .mountain-section__background {
     position: relative;
+    width: 100vw;
   }
 
   picture {
@@ -340,7 +348,7 @@ li {
     position: absolute;
     background-color: var(--primary-white);
     width: 355px;
-    height: 230px;
+    height: 230px;    
     align-items: center;
     justify-content: center;
     top: 5rem;
