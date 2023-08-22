@@ -107,7 +107,7 @@ li {
 
 .hero__nav{
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;    
 }
 
 .primary-nav {
@@ -120,6 +120,7 @@ li {
 
 .icon {
     margin: 2rem;
+    /* position: fixed; */
 }
 
 .primary-nav__item--num {
@@ -130,6 +131,16 @@ li {
 .primary-nav__item--text {
     font-style: italic;  
 }
+
+@media (max-width: 35em){
+    .primary-nav {
+        position: fixed;
+        inset: 0 0 0 30%;
+        flex-direction: column;
+        padding: min(20vh, 5rem) 2em;
+    }
+}
+
 /* ^^ End Navigation */
 
 
