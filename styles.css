@@ -181,22 +181,14 @@ li {
     content: "";
     position: relative;
     background-image: url(assets/img/middle-section-bkgrnd-img.jpg);
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
-    width: 100%;
-    /* width: 100vw; */
-    height: 800px;    
+    background-position: center  center;
+    max-width: 100%;
+    width: 100vw;
+    min-height: 100%;
+    max-height: 800px;    
 }
-/*.hero__background {
-    content: "";
-    background-image: url(assets/img/hero-texture-layer.png), url(assets/img/hero-bkgrnd.jpg);   
-    position: relative;
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-attachment: fixed;
-    width: 100%;*/
 
 .history-section__text {
     width: 45rem;
@@ -333,12 +325,17 @@ li {
 
 .mountain-section__background {
     position: relative;
-    width: 100vw;
+    max-width: 100%;    
+    
   }
 
-  picture {
-    max-width: 100%;
+  picture {   
     display: block;
+    max-width: 100%;
+    background-size: contain;
+}
+.mtn-img {
+    max-width: 100%;
 }
 
   .mountain-section__schedule-container {
