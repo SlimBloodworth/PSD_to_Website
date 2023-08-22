@@ -78,6 +78,7 @@ I am currently working out some responsive aspects, accessibility, and then will
 ### Useful resources
 
 - [GIMP Photo Editor](https://www.gimp.org/) - I love open source and I really like using GIMP for photo shopping.
+- [W3Schools](https://www.w3schools.com/) - Always a useful resource when I get stuck.
 
 ## Author
 
