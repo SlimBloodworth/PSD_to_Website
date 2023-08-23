@@ -108,7 +108,7 @@ li {
 
 .icon {
     margin: 2rem;
-    position: fixed;
+    /* position: fixed; */
 }
 
 .primary-nav__item--num {
@@ -124,11 +124,22 @@ li {
     .primary-nav {
         gap: var(--gap, 1rem);
         position: fixed;
+        z-index: 1000;
         inset: 0 0 0 30%;
         flex-direction: column;
         padding: min(20vh, 5rem) 2em;
         background-color: hsl(0, 0%, 100%, 0.1);
         backdrop-filter: blur(0.3rem);
+    }
+
+    .mobile-nav-toggle {
+        position: absolute;
+        z-index: 9999;
+        width: 1rem;
+        aspect-ratio: 1;
+        top: 2rem;
+        right: 2rem;
+        border: 2px solid red;
     }
 }
 
@@ -299,8 +310,6 @@ li {
     display: none;
   }
 
-
-
 /* ^^ END HISTORY SECTION */
 
 /* CLIMB SECTION */
@@ -370,9 +379,7 @@ li {
 
   .hidden {
     display: none;
-  }
-
-  
+  }  
 
 /* ^^ END MOUNTAIN SECTION*/
 
