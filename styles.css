@@ -121,7 +121,7 @@ li {
 
 .icon {
     margin: 2rem;
-    /* position: fixed; */
+    position: fixed;
 }
 
 .primary-nav__item--num {
@@ -139,6 +139,8 @@ li {
         inset: 0 0 0 30%;
         flex-direction: column;
         padding: min(20vh, 5rem) 2em;
+        background-color: hsl(0, 0%, 100%, 0.1);
+        backdrop-filter: blur(0.3rem);
     }
 }
 
