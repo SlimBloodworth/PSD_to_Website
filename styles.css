@@ -53,6 +53,7 @@ li {
 .flex {
     display: flex;
     gap: var(--gap, 2rem);
+    
 }
 
 .divider-light {
@@ -87,24 +88,9 @@ li {
     overflow: hidden;
 }
 
-
-
 /* HERO SECTION */
 
-/* .hero__nav {
-    position: sticky;
-    top: 0;
-    background-color: transparent;
-    
-}
-
-.hero__icon {
-    margin-left: 200px;
-    padding-top: 20px;    
-} */
-
 /* Navigation */
-/*YouTube: Kevin Powell - https://www.youtube.com/watch?v=HbBMp6yUXO0&t=687s   at 14:55*/
 
 .hero__nav{
     align-items: center;
@@ -117,6 +103,7 @@ li {
 }
 .primary-nav a {
     margin-inline-end: 0.75em;
+    
 }
 
 .icon {
@@ -130,11 +117,12 @@ li {
 }
 
 .primary-nav__item--text {
-    font-style: italic;  
+    font-style: italic;      
 }
 
 @media (max-width: 35em){
     .primary-nav {
+        gap: var(--gap, 1rem);
         position: fixed;
         inset: 0 0 0 30%;
         flex-direction: column;
